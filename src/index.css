@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource-variable/geist';
+@import './styles/fonts.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: 'Glancyr Neue', 'Georgia', serif;
+  --font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg-0: #080808;
+  --color-bg-1: #0d0d0d;
+  --color-bg-2: #111111;
+  --color-bg-3: #171717;
+  --color-ivory: #f5f3ee;
+  --color-grey: #a8a6a0;
+
+  --color-background: var(--color-bg-0);
+  --color-foreground: var(--color-ivory);
+  --color-muted: var(--color-bg-2);
+  --color-muted-foreground: var(--color-grey);
+  --color-border: var(--brand-border);
+  --color-input: var(--brand-border);
+  --color-ring: var(--color-ivory);
+  --color-primary: var(--color-ivory);
+  --color-primary-foreground: var(--color-bg-0);
+  --color-secondary: var(--color-bg-2);
+  --color-secondary-foreground: var(--color-ivory);
+  --color-accent: var(--color-bg-2);
+  --color-accent-foreground: var(--color-ivory);
+  --color-destructive: #c4453a;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+}
+
+:root {
+  --brand-border: rgba(255, 255, 255, 0.12);
+  --radius: 0.25rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-ivory);
+    color: var(--color-bg-0);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-ivory);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,15 @@
+/*
+ * Glancyr Neue is the brand display font (see BRAND_GUIDELINES.md).
+ * Font files are not yet present in /public/fonts — add them here once supplied:
+ *
+ * @font-face {
+ *   font-family: 'Glancyr Neue';
+ *   src: url('/fonts/GlancyrNeue-Regular.woff2') format('woff2');
+ *   font-weight: 400;
+ *   font-style: normal;
+ *   font-display: swap;
+ * }
+ *
+ * Until then, --font-display falls back to a neutral system serif/grotesk stack
+ * in src/index.css so layout and type scale can still be built against.
+ */
