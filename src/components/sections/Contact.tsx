@@ -15,7 +15,7 @@ interface ContactFormValues {
 
 function fieldClassName(hasError: boolean) {
   return cn(
-    'w-full border-b bg-transparent py-3 text-ivory placeholder:text-grey/60 focus:outline-none',
+    'w-full border-b bg-transparent py-3 text-ivory placeholder:text-grey/60',
     hasError ? 'border-destructive' : 'border-white/20 focus:border-ivory',
   )
 }

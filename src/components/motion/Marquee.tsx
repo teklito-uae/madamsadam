@@ -1,4 +1,5 @@
 import { type ReactNode } from 'react'
+import { useReducedMotion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 interface MarqueeProps {
@@ -17,19 +18,23 @@ export function Marquee({
   className,
   itemClassName,
 }: MarqueeProps) {
+  const reducedMotion = useReducedMotion()
+
   return (
     <div className={cn('group flex overflow-hidden', className)}>
-      {[0, 1].map((i) => (
+      {(reducedMotion ? [0] : [0, 1]).map((i) => (
         <div
           key={i}
           aria-hidden={i === 1}
           className={cn(
-            'flex shrink-0 items-center motion-reduce:animate-none group-hover:[animation-play-state:paused]',
+            'flex shrink-0 items-center group-hover:[animation-play-state:paused]',
             itemClassName,
           )}
-          style={{
-            animation: `marquee-${direction} ${duration}s linear infinite`,
-          }}
+          style={
+            reducedMotion
+              ? undefined
+              : { animation: `marquee-${direction} ${duration}s linear infinite` }
+          }
         >
           {children}
         </div>

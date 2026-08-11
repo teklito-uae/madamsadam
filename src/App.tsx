@@ -12,6 +12,7 @@ import { MemorySection } from '@/components/sections/MemorySection'
 import { UAESection } from '@/components/sections/UAESection'
 import { TestimonialClients } from '@/components/sections/TestimonialClients'
 import { Contact } from '@/components/sections/Contact'
+import { KeywordsBar } from '@/components/footer/KeywordsBar'
 import { Footer } from '@/components/footer/Footer'
 
 const PRELOADED_KEY = 'ma-preloaded'
@@ -43,6 +44,7 @@ function App() {
         <TestimonialClients />
         <Contact />
       </main>
+      <KeywordsBar />
       <Footer />
     </>
   )
