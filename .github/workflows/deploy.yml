@@ -25,4 +25,8 @@ jobs:
         run: npm run build
 
       - name: Trigger Hostinger deployment
-        run: curl -fsSL -X POST "${{ secrets.HOSTINGER_WEBHOOK_URL }}"
+        run: |
+          curl -fsSL -X POST \
+            -H "Content-Type: application/json" \
+            -d '{}' \
+            "${{ secrets.HOSTINGER_WEBHOOK_URL }}"
