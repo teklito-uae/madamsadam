@@ -1,6 +1,6 @@
 import { useLenis } from 'lenis/react'
 import { useReducedMotion } from 'framer-motion'
-import logo from '@/assets/mds-logo.webp'
+import logo from '@/assets/Asset 6.webp'
 
 const NAV_ITEMS = [
   { label: 'WORK', href: '#work' },

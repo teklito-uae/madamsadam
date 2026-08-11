@@ -1,10 +1,10 @@
 import { ParallaxImage, RevealText } from '@/components/motion'
 import { memoryCategories } from '@/data/memory'
-import { placeholderImage } from '@/lib/placeholder'
+import { pexelsUrl } from '@/lib/pexels'
 
-const HERO_IMAGE = placeholderImage(
-  "%3Cstop offset='0%25' stop-color='%232a1830'/%3E%3Cstop offset='100%25' stop-color='%230a060c'/%3E",
-)
+// Hands holding a polaroid — a multi-generational moment, standing in for
+// "some moments deserve more than a photo."
+const HERO_IMAGE = pexelsUrl(5638336)
 
 export function MemorySection() {
   return (

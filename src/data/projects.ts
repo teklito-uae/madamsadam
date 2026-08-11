@@ -1,5 +1,6 @@
-import { placeholderImage } from '@/lib/placeholder'
-
+// Placeholder entries per CONTENT_GUIDE.md — replace with real work when
+// supplied. Images are hotlinked from Pexels (free stock, no attribution
+// required) as stand-ins for real photography/video.
 export interface Project {
   title: string
   category: string
@@ -11,33 +12,25 @@ export const projects: Project[] = [
   {
     title: 'MIDNIGHT DUBAI',
     category: 'EVENT / CULTURE / FILM',
-    year: '2024',
-    image: placeholderImage(
-      "%3Cstop offset='0%25' stop-color='%23262019'/%3E%3Cstop offset='100%25' stop-color='%230d0b08'/%3E",
-    ),
+    image:
+      'https://images.pexels.com/photos/36675302/pexels-photo-36675302.jpeg?auto=compress&cs=tinysrgb&w=1600',
   },
   {
     title: 'THE AFTER HOURS',
     category: 'NIGHTLIFE / PHOTOGRAPHY',
-    year: '2024',
-    image: placeholderImage(
-      "%3Cstop offset='0%25' stop-color='%231a1f26'/%3E%3Cstop offset='100%25' stop-color='%23090a0d'/%3E",
-    ),
+    image:
+      'https://images.pexels.com/photos/7715524/pexels-photo-7715524.jpeg?auto=compress&cs=tinysrgb&w=1600',
   },
   {
     title: 'FORM & FUNCTION',
     category: 'BRAND / CREATIVE DIRECTION',
-    year: '2023',
-    image: placeholderImage(
-      "%3Cstop offset='0%25' stop-color='%23211a26'/%3E%3Cstop offset='100%25' stop-color='%230b090d'/%3E",
-    ),
+    image:
+      'https://images.pexels.com/photos/3648062/pexels-photo-3648062.jpeg?auto=compress&cs=tinysrgb&w=1600',
   },
   {
     title: 'AFTERGLOW',
     category: 'EVENT / STORYTELLING',
-    year: '2023',
-    image: placeholderImage(
-      "%3Cstop offset='0%25' stop-color='%23261a1e'/%3E%3Cstop offset='100%25' stop-color='%230d090a'/%3E",
-    ),
+    image:
+      'https://images.pexels.com/photos/510299/pexels-photo-510299.jpeg?auto=compress&cs=tinysrgb&w=1600',
   },
 ]

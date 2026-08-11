@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import logo from '@/assets/mds-logo.webp'
+import logo from '@/assets/Asset 6.webp'
 import { cn } from '@/lib/utils'
 
 const NAV_ITEMS = [

@@ -1,9 +1,12 @@
-// Panel backgrounds are tonal gradient placeholders — no per-pillar photography
-// or video has been supplied yet. Swap `image` for real photography/video per
-// pillar when available; keep using the RevealImage primitive.
-import createImg from '@/assets/placeholders/pillar-create.svg'
-import connectImg from '@/assets/placeholders/pillar-connect.svg'
-import becomeImg from '@/assets/placeholders/pillar-become.svg'
+// Panel backgrounds are hotlinked from Pexels (free stock, no attribution
+// required) as stand-ins for real photography/video — swap `image` for real
+// per-pillar photography/video when supplied; keep using RevealImage.
+const createImg =
+  'https://images.pexels.com/photos/2388569/pexels-photo-2388569.jpeg?auto=compress&cs=tinysrgb&w=1600'
+const connectImg =
+  'https://images.pexels.com/photos/1047443/pexels-photo-1047443.jpeg?auto=compress&cs=tinysrgb&w=1600'
+const becomeImg =
+  'https://images.pexels.com/photos/28639224/pexels-photo-28639224.jpeg?auto=compress&cs=tinysrgb&w=1600'
 
 export interface Pillar {
   number: string

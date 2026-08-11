@@ -1,10 +1,8 @@
 import { Marquee, RevealImage, RevealText } from '@/components/motion'
-import { placeholderImage } from '@/lib/placeholder'
+import { pexelsUrl } from '@/lib/pexels'
 
-/** No real nightlife/architecture/culture photography supplied yet — swap 1:1 once it lands. */
-const UAE_IMAGE = placeholderImage(
-  "%3Cstop offset='0%25' stop-color='%23261a1e'/%3E%3Cstop offset='100%25' stop-color='%230d090a'/%3E",
-)
+// Dubai skyline at night, Burj Khalifa long exposure.
+const UAE_IMAGE = pexelsUrl(17914739)
 
 function MarqueeItem({ children }: { children: string }) {
   return (

@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { RevealText } from '@/components/motion'
-import heroBg from '@/assets/hero-bg/pexels-george-charry-2643329-4218024.jpg'
+import heroBg from '@/assets/hero-bg/pexels-maorattias-5152546.jpg'
 
 export function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -70,7 +70,7 @@ export function Hero() {
           lines={['MADAMS', 'ADAM']}
           className="font-display text-[16vw] leading-[0.9] text-ivory uppercase sm:text-[10vw] lg:text-[8rem]"
           delay={0.4}
-          stagger={0.12}
+          stagger={0.15}
         />
 
         <motion.p
