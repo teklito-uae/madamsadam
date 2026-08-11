@@ -8,6 +8,11 @@ import { SelectedStories } from '@/components/sections/SelectedStories'
 import { Services } from '@/components/sections/Services'
 import { NightSection } from '@/components/sections/NightSection'
 import { BrandingSection } from '@/components/sections/BrandingSection'
+import { MemorySection } from '@/components/sections/MemorySection'
+import { UAESection } from '@/components/sections/UAESection'
+import { TestimonialClients } from '@/components/sections/TestimonialClients'
+import { Contact } from '@/components/sections/Contact'
+import { Footer } from '@/components/footer/Footer'
 
 const PRELOADED_KEY = 'ma-preloaded'
 
@@ -33,7 +38,12 @@ function App() {
         <Services />
         <NightSection />
         <BrandingSection />
+        <MemorySection />
+        <UAESection />
+        <TestimonialClients />
+        <Contact />
       </main>
+      <Footer />
     </>
   )
 }
