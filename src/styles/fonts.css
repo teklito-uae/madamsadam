@@ -10,6 +10,10 @@
  *   font-display: swap;
  * }
  *
- * Until then, --font-display falls back to a neutral system serif/grotesk stack
- * in src/index.css so layout and type scale can still be built against.
+ * FLAG (per BRAND_GUIDELINES.md — "never substituted without flagging it"): until the
+ * real files land, --font-display in src/index.css falls back to Fraunces Variable, a
+ * self-hosted (@fontsource-variable/fraunces) editorial serif. It replaced a bare
+ * 'Georgia' fallback, which rendered inconsistently across mobile: Georgia ships on
+ * iOS/macOS/Windows but not on stock Android, so headings picked up a different,
+ * unrelated system serif there. Self-hosting removes that per-OS drift.
  */

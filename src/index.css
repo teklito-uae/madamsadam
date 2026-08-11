@@ -1,12 +1,20 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import '@fontsource-variable/geist';
+@import '@fontsource-variable/fraunces/opsz-italic.css';
+@import '@fontsource-variable/fraunces';
 @import './styles/fonts.css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: 'Glancyr Neue', 'Georgia', serif;
+  /* Glancyr Neue is the brand display font but its files haven't been supplied yet
+     (see src/styles/fonts.css). Falling back to the platform's default serif ('Georgia')
+     is what caused headings to render as a different font per device: Georgia exists on
+     iOS/macOS/Windows but not on stock Android, which substitutes an unrelated system
+     serif there. Fraunces Variable is self-hosted via @fontsource so it renders
+     identically on every platform until Glancyr Neue is added. */
+  --font-display: 'Glancyr Neue', 'Fraunces Variable', 'Georgia', serif;
   --font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
 
   --color-bg-0: #080808;

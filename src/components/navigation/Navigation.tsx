@@ -59,7 +59,10 @@ export function Navigation() {
             : 'border-transparent bg-transparent',
         )}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-10">
+        <div
+          className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-10"
+          style={{ paddingTop: 'max(1.25rem, env(safe-area-inset-top))' }}
+        >
           <a href="#" aria-label="MADAMS ADAM — home" className="flex items-center">
             <img src={logo} alt="" className="h-5 w-auto invert sm:h-6" />
           </a>
@@ -114,6 +117,11 @@ export function Navigation() {
             exit={{ clipPath: 'inset(0% 0% 100% 0%)' }}
             transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
             className="bg-bg-0 fixed inset-0 z-[150] flex flex-col justify-center gap-2 px-6 sm:px-10"
+            style={{
+              paddingLeft: 'max(1.5rem, env(safe-area-inset-left))',
+              paddingRight: 'max(1.5rem, env(safe-area-inset-right))',
+              paddingBottom: 'env(safe-area-inset-bottom)',
+            }}
           >
             {NAV_ITEMS.map((item, i) => (
               <motion.a
